@@ -1,0 +1,312 @@
+@charset "UTF-8";
+/* CSS Document */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  min-height: 100%;
+}
+
+p {
+  font-size: 24px;
+}
+
+h1 {
+  font-size: xxx-large;
+}
+
+#navbar a:link {
+  color: #ffffff;
+}
+#navbar a:visited {
+  color: white;
+}
+#navbar a:hover {
+  background: #c9012c;
+}
+
+#navbar li {
+  display: inline-block;
+}
+#navbar a {
+  background: #F2002F;
+  text-decoration: none;
+  line-height: 24px;
+  display: inline-block;
+  padding: 13px;
+  color: black;
+  margin-right: -6px;
+}
+
+#navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #ffffff;
+}
+
+.ad-banner {
+  display: flex;
+  justify-content: center;
+  width: 900px;
+  height: 300px;
+  margin: 20px auto 0;
+}
+
+.ad-banner img {
+  max-width:100%;
+  max-height:100%;
+  object-fit: cover;
+}
+
+.mainSection {
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.menu h1 {
+  text-align: center;
+}
+.menuItemsList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.menuList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #d5153a;
+  color: white;
+  padding: 40px;
+  align-items: center;
+  justify-content: center;
+}
+.menuItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 400px;
+  margin: 10px;
+  overflow: hidden;
+}
+.menuItem img {
+  width: 100%;
+}
+
+.menuItem:hover img {
+  -webkit-transform:scale(1.3);transform:scale(1.3);
+}
+
+.menuItem h2 {
+  font-weight: bold;
+  margin: 10px;
+}
+
+.contact{
+  background:#FFE8EA;
+  width: 100%;
+padding: 40px;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 40px 40px;
+  background-color: #00afef;
+}
+
+.slider > div {
+  width: 700px;
+  overflow: hidden;
+}
+
+.slider img {
+  max-width: 700px;
+  max-height: 630px;
+  display: block;
+}
+
+.slider {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider ul {
+  list-style: none;
+  width: 2800px;
+  display: flex;
+  animation: slider 20s infinite alternate;
+}
+
+@keyframes slider {
+  0% {
+    margin-left: 0px;
+  }
+  20% {
+    margin-left: 0px;
+  }
+  25% {
+    margin-left: -700px;
+  }
+  45% {
+    margin-left: -700px;
+  }
+  50% {
+    margin-left: -1400px;
+  }
+  70% {
+    margin-left: -1400px;
+  }
+  75% {
+    margin-left: -2100px;
+  }
+  100% {
+    margin-left: -2100px;
+  }
+}
+.contact > ul > li {
+  font-size: 24px;
+  }
+
+.aboutUs {
+  display: flex;
+  flex-direction: column;
+  background-color: #cdcdc5;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  text-align: center;
+}
+
+.aboutUs > div {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  max-width: 80%;
+}
+.aboutUs img {
+  margin: 0 20px;
+}
+
+.aboutUs p {
+  font-size: 24px;
+  text-align: justify;
+}
+
+
+.logo {
+  width: 150px;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical
+}
+
+input[type=submit] {
+  background-color: #F2002F;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #c9012c;
+}
+
+.formContainer {
+  border-radius: 5px;
+  padding: 20px;
+}
+
+footer {
+  background: #00afef;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  color: white;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+}
+
+.footerIcons i {
+  color: white;
+  font-size: 18px;
+}
+
+body {
+  padding-bottom: 88px;
+font-family: 'League Spartan';
+  font-size: 22px;
+}
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  #navbar {
+    background: #ffffff;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 559px) {
+  #navbar {
+    background: #00afef;
+    flex-direction: column-reverse;
+  }
+  .slider, .menuList {
+    padding: 150px 20px 20px;
+  }
+  .aboutUs > div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutUs img {
+    max-width: 300px;
+  }
+
+  .menuItem {
+    width: 250px;
+  }
+  .aboutUs p {
+    margin-top: 10px;
+  }
+  .ad-banner {
+    width: 320px;
+    height: 100px;
+  }
+}
